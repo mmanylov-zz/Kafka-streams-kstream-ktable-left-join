@@ -1,16 +1,14 @@
-package com.mmanylov.kafka_join.model;
+package com.mmanylov.kafka_streams_join.model;
 
 import java.util.UUID;
 
-public class Weather {
-
-
+public class WeatherEvent {
     private double lat;
     private double lng;
     private double avg_tmpr_f;
     private double avg_tmpr_c;
-    private string wthr_date;
-    private string geohash;
+    private String wthr_date;
+    private String geohash;
 
     @Override
     public String toString() {
@@ -20,20 +18,19 @@ public class Weather {
                 '}';
     }
 
-    public long getDate() {
+    public String getDate() {
         return wthr_date;
     }
 
-    public void setWthr_date(string wthr_date) {
+    public void setWthr_date(String wthr_date) {
         this.wthr_date = wthr_date;
     }
 
-
-    public long getGeohash() {
+    public String getGeohash() {
         return geohash;
     }
 
-    public void setGeohash(string geohash) {
+    public void setGeohash(String geohash) {
         this.geohash = geohash;
     }
 }

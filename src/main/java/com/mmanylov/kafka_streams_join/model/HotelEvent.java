@@ -1,18 +1,16 @@
-package com.mmanylov.kafka_join.model;
+package com.mmanylov.kafka_streams_join.model;
 
 import java.util.UUID;
 
-public class Hotel {
-
-
+public class HotelEvent {
     private long   Id;
-    private string Name;
-    private string Country;
-    private string City;
-    private string Address;
+    private String Name;
+    private String Country;
+    private String City;
+    private String Address;
     private double Latitude;
     private double Longitude;
-    private string geohash;
+    private String geohash;
 
     @Override
     public String toString() {
@@ -31,11 +29,11 @@ public class Hotel {
     }
 
 
-    public long getGeohash() {
+    public String getGeohash() {
         return geohash;
     }
 
-    public void setGeohash(string geohash) {
+    public void setGeohash(String geohash) {
         this.geohash = geohash;
     }
 }
