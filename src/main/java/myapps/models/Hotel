@@ -1,0 +1,42 @@
+package com.mmanylov.kafka_join.model;
+
+import java.util.UUID;
+
+public class Hotel {
+
+
+    private long   Id;
+    private string Name;
+    private string Country;
+    private string City;
+    private string Address;
+    private double Latitude;
+    private double Longitude;
+    private string geohash;
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "id=" + Id +
+                ", geohash=" + geohash +
+                '}';
+    }
+
+    public long getId() {
+        return Id;
+    }
+
+    public void setId(long id) {
+        this.Id = id;
+    }
+
+
+    public long getGeohash() {
+        return geohash;
+    }
+
+    public void setGeohash(string geohash) {
+        this.geohash = geohash;
+    }
+}
+

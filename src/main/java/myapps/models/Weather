@@ -1,0 +1,40 @@
+package com.mmanylov.kafka_join.model;
+
+import java.util.UUID;
+
+public class Weather {
+
+
+    private double lat;
+    private double lng;
+    private double avg_tmpr_f;
+    private double avg_tmpr_c;
+    private string wthr_date;
+    private string geohash;
+
+    @Override
+    public String toString() {
+        return "Weather{" +
+                "wthr_date=" + wthr_date +
+                ", geohash=" + geohash +
+                '}';
+    }
+
+    public long getDate() {
+        return wthr_date;
+    }
+
+    public void setWthr_date(string wthr_date) {
+        this.wthr_date = wthr_date;
+    }
+
+
+    public long getGeohash() {
+        return geohash;
+    }
+
+    public void setGeohash(string geohash) {
+        this.geohash = geohash;
+    }
+}
+
