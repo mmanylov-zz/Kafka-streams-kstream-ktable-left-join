@@ -3,7 +3,7 @@ package com.mmanylov.kafka_streams_join.model;
 import java.util.UUID;
 
 public class HotelEvent {
-    private long   Id;
+    private String   Id;
     private String Name;
     private String Country;
     private String City;
@@ -20,11 +20,11 @@ public class HotelEvent {
                 '}';
     }
 
-    public long getId() {
+    public String getId() {
         return Id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.Id = id;
     }
 
