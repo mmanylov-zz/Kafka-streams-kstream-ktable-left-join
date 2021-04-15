@@ -28,6 +28,53 @@ public class HotelEvent {
         this.Id = id;
     }
 
+    public double getLatitude() {
+        return Latitude;
+    }
+
+    public void setId(double Latitude) {
+        this.Latitude = Latitude;
+    }
+
+    public double getLongitude() {
+        return Longitude;
+    }
+
+    public void setLongitude(double Longitude) {
+        this.Longitude = Longitude;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    public String getCountry() {
+        return Country;
+    }
+
+    public void setCountry(String Name) {
+        this.Country = Country;
+    }
+
+    public String getCity() {
+        return City;
+    }
+
+    public void setCity(String City) {
+        this.City = City;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String Address) {
+        this.Address = Address;
+    }
 
     public String getGeohash() {
         return geohash;

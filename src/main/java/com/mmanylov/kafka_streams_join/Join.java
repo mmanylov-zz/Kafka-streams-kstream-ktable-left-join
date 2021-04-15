@@ -31,7 +31,7 @@ public class Join {
         KStream<String, WeatherEvent> weatherStream = builder.stream("weather",
                 Consumed.with(Serdes.String(), MySerdes.WEATHER_SERDE));
 
-        KTable<String, HotelEvent> hotelStream = builder.table("hotel",
+        KTable<String, HotelEvent> hotelStream = builder.table("hotels",
                 Consumed.with(Serdes.String(), MySerdes.HOTEL_SERDE));
 
         KStream<String, HotelAndWeatherEvent> joined = weatherStream.leftJoin(hotelStream,
