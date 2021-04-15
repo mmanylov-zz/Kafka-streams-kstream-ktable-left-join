@@ -5,7 +5,7 @@ public class HotelAndWeatherEvent {
     private HotelEvent hotelEvent;
     private WeatherEvent weatherEvent;
 
-    public HotelAndWeatherEvent(HotelEvent hotelEvent, WeatherEvent weatherEvent) {
+    public HotelAndWeatherEvent(WeatherEvent weatherEvent, HotelEvent hotelEvent) {
         this.hotelEvent = hotelEvent;
         this.weatherEvent = weatherEvent;
     }
