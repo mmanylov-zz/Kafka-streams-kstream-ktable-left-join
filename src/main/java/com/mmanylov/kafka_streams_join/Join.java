@@ -107,11 +107,11 @@ public class Join {
                 (wthr_evt, hotel_data) -> {
                     final ObjectNode jNode = JsonNodeFactory.instance.objectNode();
                     return (JsonNode) jNode
-                            .put("Id", hotel_data == null ? hotel_data.get("Id").textValue() : null)
-                            .put("Name", hotel_data == null ? hotel_data.get("Name").textValue() : null)
-                            .put("Country", hotel_data == null ? hotel_data.get("Country").textValue() : null)
-                            .put("City", hotel_data == null ? hotel_data.get("City").textValue() : null)
-                            .put("Address", hotel_data == null ? hotel_data.get("Address").textValue() : null)
+                            .put("Id", hotel_data != null ? hotel_data.get("Id").textValue() : null)
+                            .put("Name", hotel_data != null ? hotel_data.get("Name").textValue() : null)
+                            .put("Country", hotel_data != null ? hotel_data.get("Country").textValue() : null)
+                            .put("City", hotel_data != null ? hotel_data.get("City").textValue() : null)
+                            .put("Address", hotel_data != null ? hotel_data.get("Address").textValue() : null)
                             .put("geohash", wthr_evt.get("geohash").textValue())
                             .put("avg_tmpr_c", wthr_evt.get("avg_tmpr_c").doubleValue())
                             .put("wthr_date", wthr_evt.get("wthr_date").textValue());
